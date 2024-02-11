@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/insert-stock" method="post">
+        <label for="numeng">Numeng:</label><br>
+        <input type="text" id="numeng" name="numeng" required><br>
+      
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+      
+        <label for="year">Year:</label><br>
+        <input type="text" id="year" name="year" required><br>
+      
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type" required><br>
+      
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color" required><br>
+      
+        <label for="brand">Brand:</label><br>
+        <input type="text" id="brand" name="brand" required><br>
+      
+        <label for="seat">Seat:</label><br>
+        <input type="text" id="seat" name="seat" required><br>
+      
+        <label for="gear">Gear:</label><br>
+        <input type="text" id="gear" name="gear" required><br>
+      
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" required><br>
+      
+        <input type="submit" value="Insert">
+      </form>
+
+      <h1>Save Data</h1>
+      <form action="/save-data" method="post">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required>
+          <button type="submit">Save</button>
+      </form>
+
+      <h1>Delete Stock Tag</h1>
+      <form action="/delete-stock-tag" method="post">
+          <label for="tagId">Tag ID:</label>
+          <input type="text" id="tagId" name="tagId" required>
+          <button type="submit">Delete</button>
+      </form>
+</body>
+</html>
